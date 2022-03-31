@@ -13,7 +13,7 @@
     </head>
 
     <body>
-        <header>
+        <header class="header">
             <nav class="nav">
                 <a class="logo" href="/"><img src="images/logo/Booki.png" alt=""></a>
                 <div class="menu">
@@ -30,23 +30,23 @@
                     <input type="button" value="Rechercher">
                 </div>
             </form>
-            <div>
+            <div class="filtrage">
                 <p>Filtres</p>
-                <ul>
-                    <li><i class="fa-solid fa-money-bill-wave"></i><p>Économique</p></li>
-                    <li><i class="fa-solid fa-child-reaching"></i><p>Familial</p></li>
-                    <li><i class="fa-solid fa-heart"></i><p>Romantique</p></li>
-                    <li><i class="fa-solid fa-dog"></i><p>Animaux autorisés</p></li>
+                <ul class="filtres">
+                    <li class="filtre"><i class="fa-solid fa-money-bill-wave"></i>Économique</li>
+                    <li class="filtre"><i class="fa-solid fa-child-reaching"></i>Familial</li>
+                    <li class="filtre"><i class="fa-solid fa-heart"></i>Romantique</li>
+                    <li class="filtre"><i class="fa-solid fa-dog"></i>Animaux autorisés</li>
                 </ul>
-                <i class="fa-solid fa-info"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
+            <p><i class="fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
         </header>
-        <main>
-            <article id="hebergements">
+        <main class="main">
+            <article class="hebergements" id="hebergements">
                 <h2>Hébergements à Marseille</h2>
-                <div>
+                <div class="cards">
                     <a href="#">
-                        <figure>
+                        <figure class="card card-hebergement">
                             <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
                             <figcaption>
                                 <h3>Auberge La Cannebière</h3>
@@ -62,7 +62,7 @@
                         </figure>
                     </a>
                     <a href="#">
-                        <figure>
+                        <figure class="card card-hebergement">
                             <img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
                             <figcaption>
                                 <h3>Hôtel du port</h3>
@@ -78,7 +78,7 @@
                         </figure>
                     </a>
                     <a href="#">
-                        <figure>
+                        <figure class="card card-hebergement">
                             <img src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
                             <figcaption>
                                 <h3>Hôtel Les mouettes</h3>
@@ -94,7 +94,7 @@
                         </figure>
                     </a>
                     <a href="#">
-                        <figure>
+                        <figure class="card card-hebergement">
                             <img src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
                             <figcaption>
                                 <h3>Hôtel de la mer</h3>
@@ -110,7 +110,7 @@
                         </figure>
                     </a>
                     <a href="#">
-                        <figure>
+                        <figure class="card card-hebergement">
                             <img src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
                             <figcaption>
                                 <h3>Auberge Le Panier</h3>
@@ -126,7 +126,7 @@
                         </figure>
                     </a>
                     <a href="#">
-                        <figure>
+                        <figure class="card card-hebergement">
                             <img src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
                             <figcaption>
                                 <h3>Hôtel chez Amina</h3>
@@ -251,7 +251,7 @@
                     </a>
                 </div></section>
             </main>
-        <footer>
+        <footer class="footer">
             <ul>
                <li>A propos</li>
                <li>Fonctionnement du site</li>
