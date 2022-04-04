@@ -43,7 +43,10 @@ a
 .footer
 {
     margin: 35px;
-}
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}    
 .hebergements
 {
     flex-basis: 70%;
@@ -60,7 +63,7 @@ a
 .card-hebergement img
 {
     width: 100%;
-    height: 158px;
+    height: 173px;
 }
 .card-aside
 {
@@ -71,4 +74,13 @@ a
 {
     width: 60%;
     height: 120px;
+}
+.activites
+{
+    display: flex;
+}
+.activites img
+{
+    width: 100%;
+    height: 200px;
 }
