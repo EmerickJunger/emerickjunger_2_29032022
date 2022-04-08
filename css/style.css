@@ -1,11 +1,27 @@
+/* Propriétés globales */
 *
 {
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
+a
+{
+    color: black;
+    text-decoration: none;
+}
+ul
+{
+    list-style-type: none;
+}
+.fa-solid
+{
+    color: #0065FC;
+}
+/* Header, navigation et recherche */
 .header
 {
-    margin: 35px;
+    margin: 45px auto;
+    max-width: 1440px;
 }
 .nav
 {
@@ -13,14 +29,13 @@
     justify-content: space-between;
     align-items: center;
 }
+.fa-location-dot
+{
+    color: black;
+}
 .logo img
 {
     width: 45%;
-}
-a
-{
-    color: black;
-    text-decoration: none;
 }
 .filtres
 {
@@ -34,53 +49,84 @@ a
 {
     display: flex;
 }
+/* Main */
 .main
 {
-    margin: 35px;
     display: flex;
     flex-wrap: wrap;
+    max-width: 1440px;
+    margin: auto;
 }
-.footer
+/*.fa-star
 {
-    margin: 35px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-}    
+    
+}*/
+/* Hebergements */
 .hebergements
 {
-    flex-basis: 70%;
+    max-width: 992px;
+    flex-shrink: 0;
+}
+.cards-hebergements
+{
+    display: flex;
+    flex-wrap: wrap;
 }
 .card-hebergement
 {
     flex-basis: 30%;
 }
-.cards
-{
-    display: flex;
-    flex-wrap: wrap;
-}
 .card-hebergement img
 {
     width: 100%;
-    height: 173px;
+    height: 158px;
 }
-.card-aside
+.populaires {
+    flex-grow: 1;
+}
+.cards-populaires
 {
     display: flex;
     flex-direction: column;
 }
-.card-populaire img
-{
-    width: 60%;
-    height: 120px;
-}
-.activites
-{
+/*.card-populaire {
     display: flex;
-}
-.activites img
+}*/
+.card-populaire img
 {
     width: 100%;
     height: 200px;
 }
+/*.activites
+{
+
+}*/
+.cards-activites {
+    display: flex;
+}
+.card-activite img
+{
+    width: 100%;
+    height: 170px;
+}
+.cards-activites-1
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.cards-activites-2
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+/* Footer */
+.footer
+{
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}    
