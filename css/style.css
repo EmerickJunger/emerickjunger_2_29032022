@@ -61,6 +61,13 @@ ul
     max-width: 1440px;
     margin: auto;
 }
+.balisea
+{
+    width: 30%;
+    height: 30%;
+    background-color: #FFFFFF;
+    padding: 1%;
+}
 .fa-star
 {
     background-color: #F2F2F2;
@@ -73,16 +80,29 @@ ul
 /* Hebergements */
 .hebergements
 {
-    max-width: 992px;
+  /*  max-width: 992px;
     flex-shrink: 0;
-    background-color: #F2F2F2;
-    border-radius: 20px;
-    margin-right: 20px;
+    
+    
+    margin-right: 20px;*/
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
+
 }
 .cards-hebergements
 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    width: 65%;
+    height: 100%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+.cards-hebergements h2{
+    width: 100%;
 }
 .card-hebergement
 {
@@ -93,17 +113,46 @@ ul
     width: 100%;
     height: 158px;
 }
+figure
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
 .populaires 
 {
-    flex-grow: 1;
+    /*flex-grow: 1;*/
+
     background-color: #F2F2F2;
     border-radius: 20px;
-    margin-left: 20px;
+    /*margin-left: 20px;*/
+    width: 40%;
+}
+#entete-populaire
+{
+    height: 10%;
 }
 .cards-populaires
 {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    background-color: green;
+    height: 90%;
+}
+.cards-populaires h3
+{
+    width: 90%;
+}
+.a-populaire
+{
+    width: 80%;
+    height: 150px;
+
+}
+.a-populaire figure
+{
+    background-color: red;
 }
 .fa-chart-line
 {
@@ -111,14 +160,14 @@ ul
     background-color: #F2F2F2;
 
 }
-/*.card-populaire 
+.card-populaire 
 {
     display: flex;
-}*/
+}
 .card-populaire img
 {
-    width: 100%;
-    height: 200px;
+    width: 30%;
+    height: 100%;
 }
 .activites
 {
