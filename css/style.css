@@ -20,10 +20,16 @@ ul
     border-radius: 100%;
     padding: 10px;
 }
+figure
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
 /* Header, navigation et recherche */
 .header
 {
-    margin: 45px auto;
+    margin: /*45px*/ auto;
     max-width: 1440px;
 }
 .nav
@@ -31,27 +37,64 @@ ul
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
+}
+.menu
+{
+    display: flex;
+    width: 19%;
+    justify-content: space-between;
 }
 .fa-location-dot
 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     color: black;
-    background-color:#F2F2F2;
+    background-color: gainsboro;
 }
+.categorie-filtre
+/*.fa-info
+{
+
+}*/
 .logo img
 {
     width: 45%;
+    padding-top: 45px;
 }
 .filtres
 {
     display: inline;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 .filtre
 {
     display: inline-block;
+    background-color: red;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-right: 40px;
 }
 .filtrage
 {
     display: flex;
+}
+.survol:hover 
+{
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+.survol
+{
+    padding-top: 40px;
+    padding-bottom: 31px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 /* Main */
 .main
@@ -63,36 +106,40 @@ ul
 }
 .balisea
 {
-    width: 30%;
-    height: 40%;
+    width: 27%;
     background-color: #FFFFFF;
-    padding: 1%;
+    padding: 7px;
     border-radius: 30px;
+    box-shadow: 2px 2px 20px lightgray;
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 37%;
+
 }
 .fa-star
 {
-    background-color: #F2F2F2;
+    background-color: white;
     padding: 0;
 }
 .notation
 {
     padding: 0;
+    display: inline-block;
+    display: flex;
 }
 /* Hebergements */
 .hebergements
 {
-  /*  max-width: 992px;*/
     display: flex;
     justify-content: space-between;
-    width: 90%;
-    margin-right: 2%;
+    width: 100%;
 }
 .cards-hebergements
 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 60%;
+    width: 65%;
     height: 100%;
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -100,47 +147,49 @@ ul
 .cards-hebergements h2
 {
     width: 100%;
-}
-.card-hebergement
-{
-    flex-basis: 30%;
+    margin-left: 3%;
 }
 .card-hebergement img
 {
     width: 100%;
-    height: 158px;
+    height: 130px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover;
     
 }
-figure
+#bas-page
 {
+    display: flex;
+    align-items: flex-start;
     width: 100%;
-    height: 100%;
-    margin: 0;
+    margin: 3%;
 }
+/*Populaires*/
 .populaires 
 {
     background-color: #F2F2F2;
     border-radius: 20px;
-    width: 40%;
+    width: 35%;
     margin-left: 3%;
 }
 #entete-populaire
 {
     height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .cards-populaires
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     height: 85%;
+    justify-content: space-around;
     align-items: center;
-}
-.cards-populaires h2
-{
-    width: 90%;
+
 }
 .a-populaire
 {
@@ -153,7 +202,7 @@ figure
     background-color: white  ;
     padding: 2%;
     border-radius: 30px;
-
+    box-shadow: 5px 5px 20px lightgray;
 }
 .fa-chart-line
 {
@@ -172,31 +221,103 @@ figure
     margin-right: 5%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    object-fit: cover;
 }
-/*.activites
+/*Activites*/
+.entete-activite
 {
-
-}*/
+    display: flex;
+    width: 100%;
+    height: 5%;
+    background-color: aqua;
+    margin: 0;
+}
+#activites
+{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    max-height: 600px;
+    background-color: green;
+}
 .cards-activites
 {
+    
+    width: 100%;
+    height: 95%;
+    border-radius: 20px;
     display: flex;
+    justify-content: space-around;
+    margin: 0;
 }
-.card-activite img
+.activite
+{
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    background-color: red;
+    height: 100%;
+}
+.a-activite
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 2px 2px 20px lightgray;
+    /*justify-content: center;*/
+}
+.colonne-droite
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}
+.pomegues
 {
     width: 100%;
-    height: 170px;
+    height: 50%;
 }
-.cards-activites-1
+.frioul
 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    width: 100%;
+    height: 35%;
 }
-.cards-activites-2
+.card-large
 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    width: 40%;
+    height: 100%;
+}
+.card-activite-1
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.card-activite-1 img 
+{
+    width: 100%;
+    height: 80%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    object-fit: cover;
+}
+.card-activite-1 figcaption
+{
+    width: 100%;
+    height: 20%;
+}
+.card-activite-2 img
+{
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
 }
 /* Footer */
 .footer
@@ -204,8 +325,17 @@ figure
     max-width: 1440px;
     margin: auto;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     background-color: #F2F2F2;
-    padding-right: 27%;
-}    
+    padding-right: 21%;
+    padding-left: 1%;
+}
+/*.espacement-1
+{
+    line-height: 200%;
+}*/
+.espacement-2
+{
+    /*line-height: 250%;*/
+    font-weight: bolder;
+}
