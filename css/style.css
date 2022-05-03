@@ -1,7 +1,6 @@
 /* Propriétés globales */
-*
+body
 {
-    box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
 a
@@ -13,76 +12,166 @@ ul
 {
     list-style-type: none;
 }
-.fa-solid
+section
+{
+    width: 90%;
+    margin-left: 5%;
+}*
+/*.fa-solid
 {
     color: #0065FC;
     background-color: #DEEBFF;
     border-radius: 100%;
     padding: 10px;
-}
-figure
+}*/
+.titre
 {
-    width: 100%;
-    height: 100%;
+    display: flex;
     margin: 0;
+    padding-top: 2%;
 }
 /* Header, navigation et recherche */
-.header
+header
 {
-    margin: /*45px*/ auto;
-    max-width: 1440px;
+    width: 90%;
+    margin-left: 5%;
 }
-.nav
+.explication
+{
+    display: flex;
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+nav
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     height: 100%;
 }
 .menu
 {
     display: flex;
-    width: 19%;
+    width: 20%;
     justify-content: space-between;
+}
+.geo
+{
+    padding: 13px 17px 13px 17px;
+    background-color: #F2F2F2;
+    border: 0;
+    border-radius: 10px 0 0 10px;
+    margin-right: -5px;
 }
 .fa-location-dot
 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     color: black;
-    background-color: gainsboro;
+}
+#search
+{
+    padding: 12px 29px 12px 29px;
+    border: 1px solid #F2F2F2;
+    margin: 0;
+
+}
+#search::placeholder
+{
+    color: black;
+    font-weight: 700;
+}
+.searching
+{
+    background-color: #0065FC;
+    color: #FFFFFF;
+    padding: 13px 17px 13px 17px;
+    border: 0;
+    margin: -5px;
+    border-radius: 0 10px 10px 0;
+
 }
 .categorie-filtre
-/*.fa-info
 {
-
-}*/
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 700;
+    margin-top: 2%;
+}
+.fa-info
+{
+    color: #0065FC;
+    background-color: white;
+    border: 1px solid gainsboro;
+    border-radius: 100%;
+    padding: 2px;
+    width: 15px;
+    height: 1%;
+    margin-left: 8px;
+    margin-right: 5px;
+}
+.fa-info::before
+{
+    display: flex;
+    margin-left: 31%;
+    font-size: 15px;
+}
 .logo img
 {
-    width: 45%;
-    padding-top: 45px;
+    width: 60%;
+    margin-top: 45px;
+    margin-left: 10%;
 }
 .filtres
 {
     display: inline;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+}
+.categorie
+{
+    /*display: flex;
+    flex-wrap: wrap;*/
+    color: #0065FC;
+    padding: 12px;
+    margin: 0;
+    border-radius: 50px;
+    background-color: #DEEBFF;
+    margin-right: 15px;
 }
 .filtre
 {
+    /*display: flex;*/
     display: inline-block;
-    background-color: red;
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    padding-right: 40px;
+    border: 2px solid gainsboro;
+    border-bottom-left-radius: 36px;
+    border-top-left-radius: 36px;
+    border-top-right-radius: 36px;
+    border-bottom-right-radius: 36px;
+    margin-right: 2%;
+    margin-top: 1%;
+    padding-right: 25px;
+    text-align: center;
+    font-weight: 700;
+}
+.filtre:hover
+{
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border: 2px solid #F2F2F2;
 }
 .filtrage
 {
     display: flex;
+}
+.fa-child-reaching::before
+{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    margin-left: 2px;
+    padding-right: 3px;
 }
 .survol:hover 
 {
@@ -97,43 +186,45 @@ figure
     padding-left: 20px;
 }
 /* Main */
-.main
+main
 {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1440px;
-    margin: auto;
 }
 .balisea
 {
-    width: 27%;
+    display: flex;
+    width: 29%;
     background-color: #FFFFFF;
-    padding: 7px;
-    border-radius: 30px;
+    padding: 5px;
+    border-radius: 20px;
     box-shadow: 2px 2px 20px lightgray;
-    margin-left: 3%;
-    margin-right: 3%;
-    height: 37%;
-
+    height: 33%;
+    margin-bottom: 3%;
+    margin-top: 0;
+    margin-left: 0%;
 }
-.fa-star
+.etoiles
 {
+    display: flex;
     background-color: white;
     padding: 0;
+    color: #0065FC;
 }
 .notation
 {
     padding: 0;
     display: inline-block;
     display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 5%;
 }
 /* Hebergements */
 .hebergements
 {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 4%;
+    margin-bottom: 3%;
 }
 .cards-hebergements
 {
@@ -141,88 +232,172 @@ figure
     flex-wrap: wrap;
     justify-content: space-around;
     width: 65%;
-    height: 100%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
     background-color: #F2F2F2;
     border-radius: 20px;
 }
 .cards-hebergements h2
 {
+    /*display: flex;*/
+    /*flex-direction: column;*/
     width: 100%;
-    margin-left: 3%;
+    margin-left: 2%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    padding: 0;
+    /*justify-content: center;*/
+}
+.card-hebergement
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
 }
 .card-hebergement img
 {
     width: 100%;
-    height: 130px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    height: 160px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     object-fit: cover;
-    
 }
 #bas-page
 {
-    display: flex;
-    align-items: flex-start;
+    /*display: flex;
+    align-items: flex-start;*/
     width: 100%;
-    margin: 3%;
+    margin-left: 2%;
+}
+#bas-page h3
+{
+    margin-top: 10px;
+    padding-bottom: 100px;
+}
+.lieu
+{
+    display: inline-block;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+.nuit
+{
+    display: inline-block;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 0;
+}
+.nuit em
+{
+    font-weight: 700;
+    font-style: normal;
 }
 /*Populaires*/
 .populaires 
 {
     background-color: #F2F2F2;
     border-radius: 20px;
-    width: 35%;
+    width: 32%;
+    /*height: 20%;*/
     margin-left: 3%;
 }
 #entete-populaire
 {
-    height: 10%;
+    /*height: 10%;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 9%;
+    margin-right: 8%;
+    margin-top: 5%;
 }
-.cards-populaires
+/*.cards-populaires
 {
     display: flex;
     flex-direction: column;
     height: 85%;
     justify-content: space-around;
     align-items: center;
-
-}
-.a-populaire
+}*/
+/*.a-populaire
 {
-    width: 90%;
-    height: 30%;
-    
-}
+    width: 100%;
+    height: 100%;
+}*/
 .a-populaire figure
 {
-    background-color: white  ;
-    padding: 2%;
-    border-radius: 30px;
+    display: flex;
+    /*height: 10%;*/
+    background-color: white;
+    padding: 1%;
+    border-radius: 20px;
     box-shadow: 5px 5px 20px lightgray;
+    margin-bottom: 9%;
 }
 .fa-chart-line
 {
     color: black;
     background-color: #F2F2F2;
-
+    font-size: 20px;
+    margin-right: 1%;
 }
-.card-populaire 
+/*.card-populaire 
 {
     display: flex;
-}
+    width: 100%;
+    height: 100%;
+}*/
 .card-populaire img
 {
     width: 40%;
-    height: 100%;
+    height: 168px;
     margin-right: 5%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     object-fit: cover;
+}
+.a-populaire h3
+{
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.prix
+{
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+.prix em
+{
+    font-weight: 700;
+    font-style: normal;
+}
+.etoile
+{
+    display: flex;
+    background-color: white;
+    padding: 0;
+    color: #0065FC;
+}
+.gray-star
+{
+    display: flex;
+    background-color: white;
+    padding: 0;
+    color: lightgray;
+}
+.score
+{
+    padding: 0;
+    display: inline-block;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 /*Activites*/
 .entete-activite
@@ -231,7 +406,7 @@ figure
     width: 100%;
     height: 5%;
     margin: 0;
-    padding-bottom: 4%;
+    margin-bottom: 2%;
 }
 #activites
 {
@@ -239,16 +414,18 @@ figure
     flex-wrap: nowrap;
     flex-direction: column;
     max-height: 600px;
+    margin-bottom: 1%;
 }
 .cards-activites
 {
     
     width: 100%;
-    height: 90%;
+    margin: 0;
+    height: 500px;
     border-radius: 20px;
     display: flex;
     justify-content: space-around;
-    padding-bottom: 4%;
+    margin-bottom: 4%;
 }
 .activite-1
 {
@@ -390,24 +567,38 @@ figure
     width: 100%;
     height: 21%;
 }
-/* Footer */
-.footer
+.h3
 {
-    max-width: 1920px;
-    margin: auto;
+    display: flex;
+    padding-left: 6%;
+    padding-top: 3%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+/* Footer */
+footer
+{
+    width: 100%;
+    background-color: #F2F2F2;
+}
+.bas
+{
     display: flex;
     justify-content: space-between;
-    background-color: #F2F2F2;
-    padding-right: 28%;
-    padding-left: 6%;
-    padding-bottom: 1%;
+    width: 68%;
+    margin: 0;
+    margin-left: 5%;
+}
+.bas ul
+{
+    padding: 0;
 }
 .espacement-1
 {
-    line-height: 200%;
+    line-height: 30px;
 }
 .espacement-2
 {
-    line-height: 250%;
-    font-weight: bolder;
+    line-height: 40px;
 }
