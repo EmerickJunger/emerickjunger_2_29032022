@@ -19,6 +19,8 @@ section
 }
 .titre
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0;
     padding-top: 2%;
@@ -33,23 +35,35 @@ header
 }
 .explication
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 0.7%;
     margin-bottom: 1%;
 }
 nav
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 99%;
     height: 100%;
 }
 .menu
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 20%;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 0;
 }
 .geo
@@ -69,6 +83,26 @@ nav
     padding: 12px 29px 12px 29px;
     border: 1px solid #F2F2F2;
     margin: 0;
+}
+#search::-webkit-input-placeholder
+{
+    color: black;
+    font-weight: 700;
+}
+#search::-moz-placeholder
+{
+    color: black;
+    font-weight: 700;
+}
+#search:-ms-input-placeholder
+{
+    color: black;
+    font-weight: 700;
+}
+#search::-ms-input-placeholder
+{
+    color: black;
+    font-weight: 700;
 }
 #search::placeholder
 {
@@ -90,10 +124,18 @@ nav
 }
 .categorie-filtre
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-weight: 700;
     margin-top: 2%;
 }
@@ -111,6 +153,8 @@ nav
 }
 .fa-info::before
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-left: 31%;
     font-size: 15px;
@@ -125,6 +169,8 @@ nav
 {
     display: inline;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .categorie
@@ -158,12 +204,17 @@ nav
 }
 .filtrage
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .fa-child::before
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     font-size: 15px;
     margin-left: 2px;
     padding-right: 3px;
@@ -186,26 +237,36 @@ nav
 /* Main */
 main
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     max-width: 1920px;
     margin: auto;
 }
 .cards
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 100%;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 .balisea
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 29%;
     background-color: #FFFFFF;
     padding: 5px;
     border-radius: 20px;
-    box-shadow: 2px 2px 20px lightgray;
+    -webkit-box-shadow: 2px 2px 20px lightgray;
+            box-shadow: 2px 2px 20px lightgray;
     height: 44%;
     margin-bottom: 3%;
     margin-top: 0;
@@ -213,6 +274,8 @@ main
 }
 .etoiles
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-color: white;
     padding: 0;
@@ -222,6 +285,8 @@ main
 {
     padding: 0;
     display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 0;
     margin-bottom: 0;
@@ -230,14 +295,20 @@ main
 /* Hebergements */
 #hebergements
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 3%;
 }
 .cards-hebergements
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 65%;
     padding-left: 1.5%;
     padding-right: 1.5%;
@@ -254,8 +325,11 @@ main
 }
 .card-hebergement
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 0;
 }
 .card-hebergement img
@@ -264,7 +338,8 @@ main
     height: 160px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 #bas-page
 {
@@ -309,20 +384,29 @@ main
 }
 #entete-populaire
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: 9%;
     margin-right: 8%;
     margin-top: 5%;
 }
 .a-populaire figure
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-color: white;
     padding: 1%;
     border-radius: 20px;
-    box-shadow: 5px 5px 20px lightgray;
+    -webkit-box-shadow: 5px 5px 20px lightgray;
+            box-shadow: 5px 5px 20px lightgray;
     margin-bottom: 9%;
 }
 .fa-chart-line
@@ -339,10 +423,13 @@ main
     margin-right: 5%;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .a-populaire h3
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 5%;
     margin-top: 1%;
@@ -361,6 +448,8 @@ main
 }
 .etoile
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-color: white;
     padding: 0;
@@ -368,6 +457,8 @@ main
 }
 .gray-star
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-color: white;
     padding: 0;
@@ -377,6 +468,8 @@ main
 {
     padding: 0;
     display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 20%;
     margin-bottom: 0;
@@ -384,6 +477,8 @@ main
 /*Activites*/
 .entete-activite
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 5%;
@@ -392,9 +487,15 @@ main
 }
 #activites
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .cards-activites
 {
@@ -402,42 +503,64 @@ main
     margin: 0;
     height: 500px;
     border-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin-bottom: 4%;
 }
 .activite-1
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 50%;
     height: 100%;
     margin-right: 1%;
 }
 .activite-2
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 50%;
     height: 100%;
     margin-left: 2%;
 }
 .a-activite
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 100%;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 2px 2px 20px lightgray;
+    -webkit-box-shadow: 2px 2px 20px lightgray;
+            box-shadow: 2px 2px 20px lightgray;
 }
 .colonne-droite
 {
     width: 50%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 0;
 }
 .pomegues
@@ -492,7 +615,8 @@ main
     height: 90%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .pomegues img
 {
@@ -500,7 +624,8 @@ main
     height: 80%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .frioul img
 {
@@ -508,7 +633,8 @@ main
     height: 72%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .pomegues figcaption
 {
@@ -526,7 +652,8 @@ main
     border-top-left-radius: 20px;
     width: 100%;
     height: 80%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .longchamp img
 {
@@ -534,7 +661,8 @@ main
     border-top-left-radius: 20px;
     width: 100%;
     height: 79%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .notre-dame figcaption
 {
@@ -548,8 +676,11 @@ main
 }
 .a-activite h3
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding-left: 6%;
     padding-top: 3%;
     padding-right: 0;
@@ -568,8 +699,12 @@ footer
 }
 .bas
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 68%;
     margin: 0;
     margin-left: 5%;
@@ -603,7 +738,10 @@ footer
     }
     .cards-activites
     {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         max-height: 500px;
     }
     .activite-1
@@ -628,8 +766,12 @@ footer
     }
     .colonne-droite
     {
-        flex-direction: row;
-        align-content: space-between;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-line-pack: justify;
+            align-content: space-between;
         width: 67%;
     }
     .card-large
@@ -661,7 +803,10 @@ footer
     }
     #hebergements
     {
-        flex-direction: column-reverse;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
     }
     .populaires
     {
@@ -723,14 +868,18 @@ footer
     }
     .filtrage
     {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
     .filtres
     {
         margin: 0;
         padding-left: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
     .categorie-filtre
     {
@@ -768,7 +917,10 @@ footer
     }
     nav
     {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .logo img
     {
@@ -817,7 +969,10 @@ footer
     .cards-hebergements
     {
         background-color: white;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         padding: 0;
         width: 100%;
     }
@@ -842,7 +997,10 @@ footer
     }
     .bas
     {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         margin-top: 5%;
     }
     #bas-page
@@ -891,15 +1049,21 @@ footer
     {
         height: 1200px;
         max-height: none;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         margin: 0;
-        justify-content: flex-start;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
         width: 100%;
     }
     .activite-1, .activite-2
     {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         width: 100%;
         height: 50%;
         margin-top: 0;
@@ -919,7 +1083,10 @@ footer
     {
         width: 98%;
         height: 65%;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         margin-bottom: 4%;
     }
     .pomegues, .frioul, .notre-dame, .longchamp
