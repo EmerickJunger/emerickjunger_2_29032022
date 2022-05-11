@@ -177,6 +177,10 @@ nav
     padding-top: 40px;
     padding-bottom: 31px;
 }
+.survol:hover a
+{
+    color: #0065FC;
+}
 /* Main */
 main
 {
@@ -782,8 +786,18 @@ footer
     }
     .titre
     {
-        margin-top: 20px;
+        margin-top: 5%;
         font-size: x-large;
+        margin-bottom: 5%;
+    }
+    .explication
+    {
+        margin-bottom: 5%;
+    }
+    .categorie-filtre
+    {
+        margin-top: 5%;
+        margin-bottom: 3%;
     }
     .searching
     {
@@ -927,6 +941,6 @@ footer
     }
     .geo
     {
-    margin-right: -1%;
+        margin-right: -1%;
     }
 }
